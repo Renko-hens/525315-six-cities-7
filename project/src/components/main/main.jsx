@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CardPlace from '../card-place/card-place';
+import { Fragment } from 'react';
 
 const propTypes = {
   places: PropTypes.arrayOf(
@@ -17,7 +18,7 @@ const propTypes = {
 
 function Main({ places }) {
   return (
-    <body>
+    <Fragment>
       <div style={{ display: 'none' }}>
         <svg xmlns="http://www.w3.org/2000/svg">
           <symbol id="icon-arrow-select" viewBox="0 0 7 4">
@@ -166,7 +167,7 @@ function Main({ places }) {
           </div>
         </main>
       </div>
-    </body>
+    </Fragment>
   );
 }
 
